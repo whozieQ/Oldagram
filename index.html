@@ -3,7 +3,38 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <img src="images/logo.png">
+        <div class="container">
+            <header>
+                <img class="logo" src="images/logo.png" alt="the Oldagram typeface logo">
+                <img class="avatar" src="images/user-avatar.png" alt="avatar of logged in user">
+            </header>
+            <article>
+                <section class="post-header">
+                    <img class="avatar" src="images/avatar-vangogh.jpg" alt="avatar for this post's author">
+                    <div class="post-user">
+                        <p class="bold">username</p>
+                        <p>user city, country</p>
+                    </div>
+                </section>
+                <section class="post-img">
+                    <img class="main-img" src="images/post-vangogh.jpg" alt="an image posted by this author">
+                </section>
+                <footer>
+                    <div class="action-btns">
+                        <img class="action-icon" src="images/icon-heart.png" alt="outline of a heart">
+                        <img class="action-icon" src="images/icon-comment.png" alt="outline of a comment bubble">
+                        <img class="action-icon" src="images/icon-dm.png" alt="outline of a paper airplane">
+                    </div>
+                    <div class="post-info">
+                        <p class="likes bold"><span id="likes-num">0</span> likes</p>
+                        <p class="comment"><span class="bold">username</span> user's comment</p>
+                    </div>
+                </footer>
+            </article>
+            <article>
+                <p>testing</p>
+            </article>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>

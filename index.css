@@ -2,4 +2,74 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/* layout */
+.container{
+    width: 375px;
+    background:#EDEDED;
+}
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    padding: 10px;
+    background: white;
+}
+.logo{
+    height: 60px;
+    /* height: 100%; */
+    margin: 0;
+}
+.avatar{
+    height: 35px;
+    border-radius: 50%;
+}
+
+article{
+    background: white;
+    margin-bottom: 20px;
+}
+.post-header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+}
+.post-user{
+    padding: 1px 10px;
+    margin: 0;
+}
+
+.main-img{
+    width: 375px;
+    height: 375px;
+}
+.action-btns{
+    margin: 20px 20px 0px 10px;
+
+}
+.action-icon{
+    height: 32px;
+    padding-right: 10px;
+}
+
+footer{
+    padding-bottom: 20px;
+}
+.post-info{
+    margin: 0 10px;
+}
+.likes,
+.comment{
+    padding-top:10px;
+}
+/* typography */
+.bold{
+    font-weight: 700;
+}
+p{
+    margin: 0;
+    line-height: 1;
+}
 
