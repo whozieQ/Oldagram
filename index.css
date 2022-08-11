@@ -57,7 +57,11 @@ article{
     height: 32px;
     padding-right: 10px;
 }
-
+.action-icon:hover,
+.action-icon:focus{
+    opacity: 50%;
+    cursor: pointer;
+}
 footer{
     padding-bottom: 20px;
 }

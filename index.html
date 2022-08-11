@@ -10,22 +10,24 @@
                 <img class="logo" src="images/logo.png" alt="the Oldagram typeface logo">
                 <img class="avatar" src="images/user-avatar.png" alt="avatar of logged in user">
             </header>
-            <article>
+        </div>
+        <template id="post">
+            <article id="0">
                 <section class="post-header">
-                    <img class="avatar" src="images/avatar-vangogh.jpg" alt="avatar for this post's author">
+                    <img class="avatar" src="#" alt="avatar for this post's author">
                     <div class="post-user">
-                        <p class="bold">username</p>
-                        <p>user city, country</p>
+                        <p class="bold" id="post-user-name"></p>
+                        <p id="post-user-location"></p>
                     </div>
                 </section>
                 <section class="post-img">
-                    <img class="main-img" src="images/post-vangogh.jpg" alt="an image posted by this author">
+                    <img class="main-img" src="#" alt="an image posted by this author">
                 </section>
                 <footer>
                     <div class="action-btns">
-                        <img class="action-icon" src="images/icon-heart.png" alt="outline of a heart">
-                        <img class="action-icon" src="images/icon-comment.png" alt="outline of a comment bubble">
-                        <img class="action-icon" src="images/icon-dm.png" alt="outline of a paper airplane">
+                        <img class="action-icon action-like" src="images/icon-heart.png" alt="outline of a heart" onclick="addLike('post-0')">
+                        <img class="action-icon action-comment" src="images/icon-comment.png" alt="outline of a comment bubble">
+                        <img class="action-icon action-dm" src="images/icon-dm.png" alt="outline of a paper airplane">
                     </div>
                     <div class="post-info">
                         <p class="likes bold"><span id="likes-num">0</span> likes</p>
@@ -33,10 +35,7 @@
                     </div>
                 </footer>
             </article>
-            <article>
-                <p>testing</p>
-            </article>
-        </div>
+        </template>
         <script src="index.js"></script>
     </body>
 </html>

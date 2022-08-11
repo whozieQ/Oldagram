@@ -27,8 +27,39 @@ const posts = [
         likes: 152
     }
 ]
-renderPost(posts[0])
 
-function renderPost(arr){
+const containerEl = document.querySelector(".container")
+const articleEl = document.querySelector("article")
+let numPosts = 0
 
+for (let i = 0; i< posts.length; i++){
+    numPosts++
+    addPost(posts[i])
+}
+
+function addPost(arr){
+    if ('content' in document.createElement('template')) {
+        const template = document.querySelector("template").content
+        template.querySelector("article").id = `post-${numPosts}`
+        template.querySelector(".post-header").getElementsByClassName("avatar")[0].src = arr.avatar
+        template.querySelector("#post-user-name").textContent = arr.name
+        template.querySelector("#post-user-location").textContent = arr.location
+        template.querySelector(".main-img").src = arr.post
+        template.querySelector("#likes-num").textContent = arr.likes
+        template.querySelector(".comment").innerHTML = `<span class="bold">${arr.username}</span> ${arr.comment}`
+        template.querySelector(".action-like").setAttribute("onclick","addLike('post-" + numPosts +"')")
+        console.log( template.querySelector(".action-like").getAttribute('onclick'))
+
+        const targetContainer = document.getElementsByClassName("container")[0]
+        targetContainer.appendChild(document.importNode(template,true))
+    }
+    else{
+        console.log("Cannot support HTML template elements")
+    }
+}
+function addLike(clicker){
+    const article = document.getElementById(clicker)
+    const likes = article.querySelector("#likes-num")
+    let likesNum = Number(likes.textContent) + 1
+    likes.textContent = likesNum
 }
