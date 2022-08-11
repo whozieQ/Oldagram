@@ -27,4 +27,8 @@ const posts = [
         likes: 152
     }
 ]
+renderPost(posts[0])
 
+function renderPost(arr){
+
+}

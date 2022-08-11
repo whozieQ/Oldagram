@@ -10,3 +10,6 @@
  - Use js to render out all 3 posts
  - increase the likes of the post when it is clicked on
 
+Font
+Source Sans Pro
+400 12px, 700 13px, 400 13px

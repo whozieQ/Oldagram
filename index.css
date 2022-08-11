@@ -1,6 +1,10 @@
 html, body {
     margin: 0;
     padding: 0;
+    /* Source Sans Pro */
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
 /* layout */
 .container{
@@ -67,6 +71,8 @@ footer{
 /* typography */
 .bold{
     font-weight: 700;
+    font-size: 13px;
+    padding-bottom: 3px;
 }
 p{
     margin: 0;
