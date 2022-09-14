@@ -1,5 +1,5 @@
 # Oldagram
- Solo Project #6. After completing Essential CSS concepts Scrimba Frontend Dev course
+ Solo Project #5. After completing Essential CSS concepts Scrimba Frontend Dev course
  Requirements
  - Create only the first 'post'
  - Use semantic HTML
